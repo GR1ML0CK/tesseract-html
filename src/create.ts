@@ -15,6 +15,12 @@ const forEach = (obj: any, cb: (value: any, key2: string) => void): void => {
   }
 };
 
+/**
+ * Sets all the non-standard attributes on the element (attrs, data, aria) using the `.setAttribute()` method
+ * @param el - the element to add attributes to
+ * @param attrs - the attributes to add to the element structured as a object of key:value pairs
+ * @param objKey - the key for the attrs object (ie "attrs", "data", "aria")
+ */
 const setAttributes = (el: HTMLElement, attrs: BasicObject, objKey: string): void => {
   forEach(attrs, (value, key) => {
     let attrName = "";
@@ -24,6 +30,11 @@ const setAttributes = (el: HTMLElement, attrs: BasicObject, objKey: string): voi
   });
 };
 
+/**
+ * Appends all the child elements a parent element
+ * @param parent - the parent element to append to
+ * @param children - the child elements to append
+ */
 const appendChildren = (parent: HTMLElement, children: DOMElements): void => {
   if (children) {
     for (let i = 0, len = children.length; i < len; i++) {
