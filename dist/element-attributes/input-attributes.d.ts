@@ -1,4 +1,5 @@
-interface InputAttributes extends ElementAttributes {
+import ElementAttributes from "./el-attributes";
+export default interface InputAttributes extends ElementAttributes {
     alt?: string;
     autocomplete?: string;
     border?: string | number;

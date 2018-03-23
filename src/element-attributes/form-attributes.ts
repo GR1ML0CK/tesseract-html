@@ -1,4 +1,6 @@
-interface FormAttributes extends ElementAttributes {
+import ElementAttributes from "./el-attributes";
+
+export default interface FormAttributes extends ElementAttributes {
   action?: string;
 
   autocomplete?: string;

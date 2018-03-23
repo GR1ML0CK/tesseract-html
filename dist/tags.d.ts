@@ -22,7 +22,6 @@ declare const enum Tags {
     label = "label",
     li = "li",
     mark = "mark",
-    marquee = "marquee",
     ol = "ol",
     option = "option",
     p = "p",

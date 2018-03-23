@@ -1,3 +1,4 @@
+import ElementAttributes from "./element-attributes/el-attributes";
 /**
  * Creates an HTMLElement and allow for setting it's attributes and child elements
  *

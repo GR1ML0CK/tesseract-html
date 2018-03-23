@@ -1,4 +1,5 @@
 import DOMElements from "./types/DOMElements";
+import ElementAttributes from "./element-attributes/el-attributes";
 
 /**
  * A basic object loop. This avoids repeated code or pulling in a dependency.

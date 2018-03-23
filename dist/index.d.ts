@@ -1,3 +1,14 @@
+import BrAttributes from "./element-attributes/br-attributes";
+import AAttributes from "./element-attributes/a-attributes";
+import ElementAttributes from "./element-attributes/el-attributes";
+import ImgAttributes from "./element-attributes/img-attributes";
+import IframeAttributes from "./element-attributes/iframe-attributes";
+import HrAttributes from "./element-attributes/hr-attributes";
+import FormAttributes from "./element-attributes/form-attributes";
+import SelectAttributes from "./element-attributes/select-attributes";
+import OptionAttributes from "./element-attributes/option-attributes";
+import InputAttributes from "./element-attributes/input-attributes";
+import LiAttributes from "./element-attributes/li-attributes";
 /**
  * Creates a [HTMLAnchorElement] and allow for setting it's attributes and child elements
  *

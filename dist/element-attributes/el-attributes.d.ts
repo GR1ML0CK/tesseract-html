@@ -1,4 +1,4 @@
-interface ElementAttributes {
+export default interface ElementAttributes {
     accessKey?: string;
     className?: string;
     id?: string;
