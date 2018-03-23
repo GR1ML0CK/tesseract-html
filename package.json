@@ -1,0 +1,26 @@
+{
+  "name": "tesseract-html",
+  "version": "0.1.0",
+  "description": "A simple HTML templating language for Javascript",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GR1ML0CK/tesseract-html.git"
+  },
+  "author": "Michael Nesto <michael_nesto@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GR1ML0CK/tesseract-html/issues"
+  },
+  "homepage": "https://github.com/GR1ML0CK/tesseract-html#readme",
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
+    "tslint-eslint-rules": "^5.1.0",
+    "typescript": "^2.7.2"
+  }
+}
