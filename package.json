@@ -1,6 +1,6 @@
 {
   "name": "tesseract-html",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A simple HTML templating language for Javascript",
   "main": "./dist/index.js",
   "scripts": {

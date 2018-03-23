@@ -6,6 +6,7 @@ export default interface ElementAttributes {
     draggable?: boolean;
     hidden?: boolean;
     hideFocus?: boolean;
+    textContent?: string;
     innerHTML?: string;
     innerText?: string;
     data?: {
