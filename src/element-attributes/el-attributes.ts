@@ -17,7 +17,7 @@ export default interface ElementAttributes {
 
   hideFocus?: boolean;
 
-  innerContent?: string;
+  textContent?: string;
 
   innerHTML?: string;
 
