@@ -1,5 +1,5 @@
-import DOMElements from "./types/DOMElements";
 import ElementAttributes from "./element-attributes/el-attributes";
+import DOMElements from "./types/DOMElements";
 
 /**
  * A basic object loop. This avoids repeated code or pulling in a dependency.
@@ -38,7 +38,8 @@ const setAttributes = (el: HTMLElement, attrs: BasicObject, objKey: string): voi
 const appendChildren = (parent: HTMLElement, children: DOMElements): void => {
   if (children) {
     for (let i = 0, len = children.length; i < len; i++) {
-      const child = children[i];
+      let child = children[i];
+      if (typeof child === "function") child = child();
       if (child) parent.appendChild(child);
     }
   }
@@ -56,11 +57,8 @@ const create = (tag: string, attrs?: ElementAttributes, ...children: DOMElements
   const el = document.createElement(tag);
   if (attrs) {
     forEach(attrs, (value, key) => {
-      if (typeof value === "string") {
-        (el as any)[key] = value;
-      } else {
-        setAttributes(el, value, key);
-      }
+      if (typeof value === "string") (el as any)[key] = value;
+      else setAttributes(el, value, key);
     });
   }
   appendChildren(el, children);

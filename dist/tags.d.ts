@@ -25,6 +25,7 @@ declare const enum Tags {
     ol = "ol",
     option = "option",
     p = "p",
+    script = "script",
     section = "section",
     select = "select",
     small = "small",
@@ -36,6 +37,6 @@ declare const enum Tags {
     svg = "svg",
     u = "u",
     ul = "ul",
-    video = "video",
+    video = "video"
 }
 export default Tags;

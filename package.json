@@ -1,6 +1,6 @@
 {
   "name": "tesseract-html",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A simple HTML templating language for Javascript",
   "main": "./dist/index.js",
   "scripts": {
@@ -18,9 +18,17 @@
   },
   "homepage": "https://github.com/GR1ML0CK/tesseract-html#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/jsdom": "^11.0.6",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "jsdom": "^12.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "ts-node": "^7.0.1",
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.10.0",
     "tslint-eslint-rules": "^5.1.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.9.2"
   }
 }

@@ -159,6 +159,12 @@ exports.p = function (attrs) {
     }
     return create_1.default.apply(void 0, ["p", attrs].concat(children));
 };
+exports.script = function (attrs, codeContent) {
+    var s = create_1.default("script", attrs);
+    if (codeContent != null)
+        s.text = codeContent.toString();
+    return s;
+};
 exports.section = function (attrs) {
     var children = [];
     for (var _i = 1; _i < arguments.length; _i++) {

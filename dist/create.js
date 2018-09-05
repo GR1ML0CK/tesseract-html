@@ -21,6 +21,8 @@ var appendChildren = function (parent, children) {
     if (children) {
         for (var i = 0, len = children.length; i < len; i++) {
             var child = children[i];
+            if (typeof child === "function")
+                child = child();
             if (child)
                 parent.appendChild(child);
         }
@@ -34,12 +36,10 @@ var create = function (tag, attrs) {
     var el = document.createElement(tag);
     if (attrs) {
         forEach(attrs, function (value, key) {
-            if (typeof value === "string") {
+            if (typeof value === "string")
                 el[key] = value;
-            }
-            else {
+            else
                 setAttributes(el, value, key);
-            }
         });
     }
     appendChildren(el, children);

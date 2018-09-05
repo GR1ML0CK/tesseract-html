@@ -28,7 +28,7 @@ const enum Tags {
   ol = "ol",
   option = "option",
   p = "p",
-  // script = "script",
+  script = "script",
   section = "section",
   select = "select",
   small = "small",
